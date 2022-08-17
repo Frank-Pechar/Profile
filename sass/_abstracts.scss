@@ -1,0 +1,85 @@
+// COLORS
+@mixin css-variables {
+  --color-primary: rgb(9, 9, 121);
+  --color-primary-light: hsl(182, 88%, 34%);
+  --color-primary-dark: rgb(2, 0, 36);
+
+  --color-secondary: rgb(34, 121, 9);
+
+  --color-tertiary: #db3918;
+  --color-tertiary-dark: #a62b12;
+
+  --color-grey-light-1: hsl(0, 0%, 80%);
+  --color-grey-light-2: hsl(0, 0%, 70%);
+
+  --color-grey-dark-1: hsl(0, 0%, 45%);
+  --color-grey-dark-2: hsl(0, 0%, 30%);
+  --color-grey-dark-3: hsl(0, 0%, 20%);
+
+  --color-text1: rgb(195, 195, 34);
+
+  --radius: 0.2rem;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1rem !important;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 2rem !important;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px) translateX(-100px);
+  }
+
+  80% {
+    transform: translateY(5px) translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateY(100px) translateX(100px);
+  }
+
+  80% {
+    transform: translateY(-5px) translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  80% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+// @mixin hover-focus-effect {
+//   &:hover,
+//   &:focus {
+//     color: var(--color-primary);
+//   }
+// }

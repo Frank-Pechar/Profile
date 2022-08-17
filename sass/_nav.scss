@@ -1,0 +1,109 @@
+.nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: rgba(2, 0, 36, 1);
+  font-size: 1.4rem;
+  z-index: 100;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1rem;
+
+    &-logo {
+      padding-left: 2rem;
+      padding-left: 1.5rem;
+      margin-right: auto;
+      cursor: pointer;
+      font-family: josefin-slab, serif;
+      font-weight: 800;
+      font-style: italic;
+      font-size: 1.6rem;
+
+      &-link {
+        display: block;
+        color: var(--color-tertiary);
+        transition: all 0.2s ease-in;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+          filter: brightness(1.5);
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    &-item {
+      position: relative;
+      padding: 1.5rem 2rem;
+      cursor: pointer;
+      border-radius: 0;
+
+      &::after {
+        content: "";
+        width: 0;
+        height: 100%;
+        position: absolute;
+        left: 1rem;
+        bottom: 0rem;
+        background-color: rgb(0, 212, 255);
+        transition: width 0.4s ease-in;
+      }
+
+      &:hover a,
+      &:focus a {
+        color: var(--color-tertiary-dark);
+      }
+
+      &:hover::after,
+      &:focus::after {
+        width: 100%;
+        z-index: -10;
+      }
+
+      & a {
+        text-decoration: none;
+        color: var(--color-tertiary);
+      }
+    }
+  }
+}
+
+.nav__list-item-pin {
+  position: relative;
+
+  &:hover .nav__list-item-drop,
+  &:focus .nav__list-item-drop {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.nav__list-item-drop {
+  text-align: initial;
+  position: absolute;
+  top: 4rem;
+  left: 1rem;
+  background-color: rgb(9, 9, 121);
+  width: 9.6rem;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.1s ease-in;
+
+  & li {
+    list-style: none;
+    padding: 0.5rem 1.1rem;
+    transition: background-color 0.4s ease-in;
+
+    &:hover,
+    &:focus {
+      background-color: rgb(0, 212, 255);
+    }
+  }
+}

@@ -1,0 +1,236 @@
+.background-gradient1b {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.background-gradient1 {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(9, 9, 121, 1) 10%,
+    rgba(34, 121, 9, 1) 60%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  padding-bottom: 4rem;
+}
+
+.background-gradient2 {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(34, 121, 9, 1) 20%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  padding-bottom: 4rem;
+}
+
+.background-gradient3 {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 212, 255, 1) 10%,
+    rgba(9, 9, 121, 1) 70%,
+    rgba(2, 0, 36, 1) 100%
+  );
+}
+
+.art-gallery {
+  background-color: #83878d;
+  margin-inline: auto;
+  color: var(--color-tertiary);
+  color: rgb(9, 9, 121);
+  font-style: italic;
+  text-align: center;
+}
+
+.art-title1 {
+  margin: 2rem 0 1.5rem 0;
+  font-family: josefin-slab, serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2.5rem;
+}
+
+.art-title2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.art-title3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.art-God {
+  color: var(--color-text1);
+  padding-top: 3rem;
+  text-align: center;
+  font-family: annabelle-jf, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.3rem;
+  transition: all 0.2s;
+  text-shadow: 0 0.1rem 0.1rem purple;
+
+  &:hover {
+    transform: scale(1.1);
+    text-shadow: 0 2.5rem 4rem rgba(black, 0.5);
+  }
+}
+
+.art-poetry {
+  color: white;
+  font-size: 2rem;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: annabelle-jf;
+  text-align: center;
+  text-shadow: 0rem 0.3rem 0.3rem purple;
+}
+
+.art-news {
+  color: white;
+  height: 20rem;
+  margin-inline: auto;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.art-news-title {
+  font-family: josefin-slab, serif;
+  font-weight: 800;
+  font-size: 2rem;
+  padding: 3.5rem 0 2.5rem;
+}
+
+.art-news-title2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+.art-news-title3 {
+  color: var(--color-tertiary);
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+
+.art-news-link {
+  text-decoration: none;
+  color: white;
+  display: block;
+  font-size: 1.4rem;
+  margin-bottom: 2.5rem;
+}
+
+.art-news-movie {
+  font-size: 1.4rem;
+}
+
+.art-container {
+  margin-inline: auto;
+}
+
+.art-pinterest {
+  width: 100%;
+  padding: 3.5rem 0 2rem 0;
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 5rem 0 2rem 0;
+  }
+
+  &__item {
+    font-size: 1.6rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--color-text1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.2s;
+    font-size: 1.2rem;
+
+    &:hover {
+      transform: scale(1.05) translateY(-0.5rem);
+      filter: brightness(1.1);
+      box-shadow: 0 2.5rem 4rem rgba(black, 0.5);
+    }
+
+    & span {
+      padding-top: 1rem;
+    }
+  }
+
+  &__icon {
+    width: 5.5rem;
+    height: 5.5rem;
+    fill: var(--color-tertiary);
+  }
+}
+
+.art-myvideo__title1 {
+  font-size: 1.4rem;
+  color: white;
+}
+
+.art-myvideo {
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.art-myvideo__link {
+  width: 70%;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  border-radius: 0.2rem;
+  transition: all 0.2s;
+  outline-offset: 1rem;
+  filter: brightness(0.9);
+
+  &:hover {
+    outline: 1rem solid var(--color-tertiary);
+    transform: scale(1.05) translateY(-0.5rem);
+    box-shadow: 0 2.5rem 4rem rgba(black, 0.5);
+    z-index: 20;
+    filter: brightness(1.1);
+  }
+}
+
+.art-myvideo__img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.art-footer {
+  background-color: rgba(2, 0, 36, 1);
+  color: var(--color-text1);
+  margin-top: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+  font-family: annabelle-jf, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8rem;
+  transition: all 0.2s;
+  text-shadow: 0 0.1rem 0.1rem purple;
+
+  &:hover {
+    transform: scale(1.1);
+    text-shadow: 0 2.5rem 4rem rgba(black, 0.5);
+  }
+}

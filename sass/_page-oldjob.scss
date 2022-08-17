@@ -1,0 +1,104 @@
+.owk-title1 {
+  font-family: josefin-slab, serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2.5rem;
+  margin: 2rem 0 1rem 0;
+}
+
+.owk-title2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.owk-title3 {
+  font-size: 1.2rem;
+}
+
+.owk-logos {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0 1rem;
+}
+
+.owk-logo-container {
+  flex: 1 1 200px;
+  margin: 2rem;
+}
+
+.owk-logo-image {
+  width: 100%;
+}
+
+.owk-img-group {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0 1rem;
+}
+
+.owk-img-container {
+  flex: 1 1 200px;
+  margin: 2rem;
+}
+
+.owk-img {
+  width: 100%;
+}
+
+.owk-description-container {
+  margin-left: 6rem;
+  text-align: initial;
+}
+
+.owk-description-head {
+  margin: 1rem;
+}
+
+.owk-description-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.owk-description-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 1rem;
+}
+
+.owk-item {
+  flex: 0 0 42%;
+  margin-left: 2rem;
+  min-width: 22rem;
+}
+
+.owk-qualifications-list {
+  list-style: none;
+  margin: 0 3rem;
+}
+
+.owk-statement {
+  margin: 1rem 2rem;
+}
+
+.home-footer {
+  background-color: rgba(2, 0, 36, 1);
+  color: var(--color-tertiary);
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.2s;
+  text-shadow: 0 0.1rem 0.1rem purple;
+
+  &:hover {
+    transform: scale(1.1);
+    text-shadow: 0 2.5rem 4rem rgba(black, 0.5);
+  }
+}
+
+.work-projects {
+  font-size: 1.4rem;
+  text-align: center;
+}

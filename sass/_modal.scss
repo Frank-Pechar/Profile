@@ -1,0 +1,145 @@
+.card-columns {
+  -webkit-column-count: 2;
+  column-count: 2;
+  margin-inline: 1.5rem;
+}
+
+.img-card {
+  margin: 0 auto 1.5rem auto;
+  transition: all ease-in-out 0.2s;
+
+  border: 0.7rem solid #6d7175;
+  border-radius: 0.5rem;
+  box-shadow: 0.1em 0.1em 0.3em #5e5b5b;
+
+  &:hover {
+    transform: scale(1.03);
+    filter: brightness(105%);
+    box-shadow: 0.2em 0.2em 0.6em #5e5b5b;
+    cursor: pointer;
+  }
+
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+// @media only screen and (min-width: 576px) {
+// }
+
+@media only screen and (min-width: 768px) {
+  .card-columns {
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .card-columns {
+    -webkit-column-count: 4;
+    column-count: 4;
+  }
+}
+
+// @media only screen and (min-width: 1200px) {
+// }
+
+.modal {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  z-index: 1;
+  overflow: auto;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modalContent {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.modalImg {
+  margin-top: 6rem;
+  max-height: 60vh;
+  max-width: 80vw;
+  display: block;
+}
+
+.modalTxt {
+  margin-top: 1em;
+  margin-inline: 2rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.modalNav {
+  margin-top: 1em;
+}
+
+.modalNav .button {
+  padding: 0.5rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: none;
+  color: #fff;
+  color: rgba(255, 255, 255, 0.6);
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: -5%;
+}
+
+.prevBtn {
+  left: 7rem;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.9);
+    transform: scale(1.1);
+    border-color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+.nextBtn {
+  right: 7rem;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.9);
+    transform: scale(1.1);
+    border-color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+.close {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.6);
+  top: 7rem;
+  right: 5rem;
+  font-size: 3rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: none;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.9);
+    transform: scale(1.1);
+  }
+}
+
+.modal.appear {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal.appear .modalImg,
+.modal.appear .modalTxt {
+  animation: zoom 0.3s linear;
+}
