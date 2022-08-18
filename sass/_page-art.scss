@@ -129,10 +129,21 @@
   display: block;
   font-size: 1.4rem;
   margin-bottom: 2.5rem;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: scale(1.05) translateY(-0.2rem);
+    filter: brightness(1.1);
+    // box-shadow: 0 0.5rem 1rem rgba(black, 0.5);
+  }
 }
 
 .art-news-movie {
   font-size: 1.4rem;
+  &-title {
+    font-size: 1.4rem;
+    font-style: italic;
+  }
 }
 
 .art-container {
@@ -162,11 +173,13 @@
     align-items: center;
     transition: all 0.2s;
     font-size: 1.2rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
 
     &:hover {
       transform: scale(1.05) translateY(-0.5rem);
       filter: brightness(1.1);
-      box-shadow: 0 2.5rem 4rem rgba(black, 0.5);
+      box-shadow: 0 0.5rem 1rem rgba(black, 0.5);
     }
 
     & span {
@@ -184,6 +197,7 @@
 .art-myvideo__title1 {
   font-size: 1.4rem;
   color: white;
+  margin-bottom: 1.5rem;
 }
 
 .art-myvideo {
@@ -198,13 +212,13 @@
   margin-top: 1.5rem;
   margin-bottom: 3rem;
   border-radius: 0.2rem;
-  transition: all 0.2s;
-  outline-offset: 1rem;
+  transition: all ease-in 0.2s;
+  outline-offset: 0.7rem;
   filter: brightness(0.9);
 
   &:hover {
     outline: 1rem solid var(--color-tertiary);
-    transform: scale(1.05) translateY(-0.5rem);
+    transform: scale(1.05) translateY(-0.2rem);
     box-shadow: 0 2.5rem 4rem rgba(black, 0.5);
     z-index: 20;
     filter: brightness(1.1);

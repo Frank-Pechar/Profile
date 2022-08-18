@@ -99,6 +99,7 @@
 
 .prevBtn {
   left: 7rem;
+  transition: all 0.2s;
 
   &:hover {
     color: rgba(255, 255, 255, 0.9);
@@ -109,6 +110,7 @@
 
 .nextBtn {
   right: 7rem;
+  transition: all 0.2s;
 
   &:hover {
     color: rgba(255, 255, 255, 0.9);
@@ -127,6 +129,7 @@
   outline: none;
   border: none;
   background: none;
+  transition: all 0.2s;
 
   &:hover {
     color: rgba(255, 255, 255, 0.9);

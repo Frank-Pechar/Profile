@@ -227,14 +227,16 @@ body {
   bottom: -5%; }
 
 .prevBtn {
-  left: 7rem; }
+  left: 7rem;
+  transition: all 0.2s; }
   .prevBtn:hover {
     color: rgba(255, 255, 255, 0.9);
     transform: scale(1.1);
     border-color: rgba(255, 255, 255, 0.9); }
 
 .nextBtn {
-  right: 7rem; }
+  right: 7rem;
+  transition: all 0.2s; }
   .nextBtn:hover {
     color: rgba(255, 255, 255, 0.9);
     transform: scale(1.1);
@@ -249,7 +251,8 @@ body {
   cursor: pointer;
   outline: none;
   border: none;
-  background: none; }
+  background: none;
+  transition: all 0.2s; }
   .close:hover {
     color: rgba(255, 255, 255, 0.9);
     transform: scale(1.1); }
@@ -441,10 +444,17 @@ body {
   color: white;
   display: block;
   font-size: 1.4rem;
-  margin-bottom: 2.5rem; }
+  margin-bottom: 2.5rem;
+  transition: all 0.2s; }
+  .art-news-link:hover {
+    transform: scale(1.05) translateY(-0.2rem);
+    filter: brightness(1.1); }
 
 .art-news-movie {
   font-size: 1.4rem; }
+  .art-news-movie-title {
+    font-size: 1.4rem;
+    font-style: italic; }
 
 .art-container {
   margin-inline: auto; }
@@ -466,11 +476,13 @@ body {
     flex-direction: column;
     align-items: center;
     transition: all 0.2s;
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    padding: 1rem; }
     .art-pinterest__link:hover {
       transform: scale(1.05) translateY(-0.5rem);
       filter: brightness(1.1);
-      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); }
     .art-pinterest__link span {
       padding-top: 1rem; }
   .art-pinterest__icon {
@@ -480,7 +492,8 @@ body {
 
 .art-myvideo__title1 {
   font-size: 1.4rem;
-  color: white; }
+  color: white;
+  margin-bottom: 1.5rem; }
 
 .art-myvideo {
   margin-inline: auto;
@@ -493,12 +506,12 @@ body {
   margin-top: 1.5rem;
   margin-bottom: 3rem;
   border-radius: 0.2rem;
-  transition: all 0.2s;
-  outline-offset: 1rem;
+  transition: all ease-in 0.2s;
+  outline-offset: 0.7rem;
   filter: brightness(0.9); }
   .art-myvideo__link:hover {
     outline: 1rem solid var(--color-tertiary);
-    transform: scale(1.05) translateY(-0.5rem);
+    transform: scale(1.05) translateY(-0.2rem);
     box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
     z-index: 20;
     filter: brightness(1.1); }
