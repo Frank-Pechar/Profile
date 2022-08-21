@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /images/images-main/
+Disallow: /images/images-projects/

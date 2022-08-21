@@ -460,17 +460,15 @@ body {
     font-size: 1.4rem;
     font-style: italic; }
 
-.art-container {
-  margin-inline: auto; }
-
 .art-pinterest {
+  margin-inline: auto;
   width: 100%;
   padding: 3.5rem 0 2rem 0; }
   .art-pinterest__list {
     display: flex;
     justify-content: space-around;
     list-style: none;
-    padding: 5rem 0 2rem 0; }
+    padding: 5rem 4rem 2rem 4rem; }
   .art-pinterest__item {
     font-size: 1.6rem; }
   .art-pinterest__link {
@@ -490,9 +488,10 @@ body {
     .art-pinterest__link span {
       padding-top: 1rem; }
   .art-pinterest__icon {
-    width: 5.5rem;
-    height: 5.5rem;
-    fill: var(--color-tertiary); }
+    width: 4.5rem;
+    height: 4.5rem;
+    fill: var(--color-tertiary);
+    filter: saturate(0.8); }
 
 .art-myvideo__title1 {
   font-size: 1.4rem;
