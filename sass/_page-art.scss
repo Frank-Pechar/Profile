@@ -96,7 +96,6 @@
 
 .art-news {
   color: white;
-  height: 20rem;
   margin-inline: auto;
   font-family: sans-serif;
   text-align: center;
@@ -106,7 +105,22 @@
   font-family: josefin-slab, serif;
   font-weight: 800;
   font-size: 2rem;
-  padding: 3.5rem 0 2.5rem;
+  padding: 3rem 0 2rem;
+}
+
+.art-henry-quote {
+  font-family: josefin-slab, serif;
+  color: var(--color-tertiary-dark);
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.art-henry-name {
+  font-size: 1.4rem;
+  color: var(--color-tertiary-dark);
+  margin: 1.5rem 0 2.5rem;
+  font-weight: normal;
 }
 
 .art-news-title2 {
@@ -146,20 +160,16 @@
   }
 }
 
-// .art-container {
-//   margin-inline: auto;
-// }
-
 .art-pinterest {
   margin-inline: auto;
   width: 100%;
-  padding: 3.5rem 0 2rem 0;
+  padding: 1.5rem 0 2rem 0;
 
   &__list {
     display: flex;
     justify-content: space-around;
     list-style: none;
-    padding: 5rem 4rem 2rem 4rem;
+    padding: 0rem 4rem 0rem 4rem;
   }
 
   &__item {
