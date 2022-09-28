@@ -1,13 +1,17 @@
 // COLORS
 @mixin css-variables {
-  --color-primary: rgb(9, 9, 121);
-  --color-primary-light: hsl(182, 88%, 34%);
-  --color-primary-dark: rgb(2, 0, 36);
+  --color-primary: hsl(207, 100%, 33%);
+  --color-primary: hsl(205 100% 40%);
+  --color-primary-light: hsl(190, 100%, 50%);
+  --color-primary-dark: hsl(220, 100%, 30%);
+  --color-primary-dark-2: hsl(220, 100%, 20%);
 
-  --color-secondary: rgb(34, 121, 9);
+  --color-secondary: hsl(107, 86%, 25%);
 
-  --color-tertiary: #db3918;
-  --color-tertiary-dark: #a62b12;
+  --color-tertiary: hsl(10, 80%, 48%);
+  --color-tertiary-dark: hsl(10, 80%, 36%);
+
+  --color-white-1: seashell;
 
   --color-grey-light-1: hsl(0, 0%, 80%);
   --color-grey-light-2: hsl(0, 0%, 70%);
@@ -16,9 +20,18 @@
   --color-grey-dark-2: hsl(0, 0%, 30%);
   --color-grey-dark-3: hsl(0, 0%, 20%);
 
-  --color-text1: rgb(195, 195, 34);
+  --color-text-1: hsl(60, 70%, 45%);
 
+  --text-shadow-violet: hsl(0, 93%, 17%);
   --radius: 0.2rem;
+}
+
+.u-height-100vh {
+  height: 100vh;
+}
+
+.u-margin-top-medium {
+  margin-top: 2rem !important;
 }
 
 .u-margin-bottom-small {
@@ -27,6 +40,14 @@
 
 .u-margin-bottom-medium {
   margin-bottom: 2rem !important;
+}
+
+.u-padding-bottom-small {
+  margin-bottom: 1rem !important;
+}
+
+.u-padding-bottom-medium {
+  margin-bottom: 1rem !important;
 }
 
 @keyframes moveInLeft {
@@ -74,6 +95,31 @@
   100% {
     opacity: 1;
     transform: translate(0);
+  }
+}
+
+@mixin animated-gradient-mixin {
+  background: linear-gradient(
+    90deg,
+    var(--color-primary-dark) 20%,
+    var(--color-primary) 30%,
+    var(--color-tertiary-dark) 50%,
+    var(--color-primary) 60%,
+    var(--color-primary-dark) 80%
+  );
+  background-size: 800% 800%;
+  animation: animated-gradient 20s linear infinite;
+}
+
+@keyframes animated-gradient {
+  0% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
   }
 }
 

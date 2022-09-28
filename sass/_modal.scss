@@ -4,18 +4,18 @@
   margin-inline: 1.5rem;
 }
 
-.img-card {
+.card__img {
   margin: 0 auto 1.5rem auto;
   transition: all ease-in-out 0.2s;
 
-  border: 0.7rem solid #6d7175;
+  border: 0.75rem solid var(--color-grey-dark-2);
   border-radius: 0.5rem;
-  box-shadow: 0.1em 0.1em 0.3em #5e5b5b;
+  box-shadow: 0 0.2rem 0.5rem var(--color-grey-dark-2);
 
   &:hover {
     transform: scale(1.03);
     filter: brightness(105%);
-    box-shadow: 0.2em 0.2em 0.6em #5e5b5b;
+    box-shadow: 0 0.4rem 0.8rem var(--color-grey-dark-2);
     cursor: pointer;
   }
 
@@ -51,9 +51,9 @@
   width: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 1);
   color: #fff;
-  z-index: 1;
+  z-index: 10000;
   overflow: auto;
   opacity: 0;
   pointer-events: none;
@@ -63,14 +63,14 @@
   min-height: 80vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   position: relative;
 }
 
 .modalImg {
-  margin-top: 6rem;
-  max-height: 60vh;
+  margin-top: 2rem;
+  max-height: 80vh;
   max-width: 80vw;
   display: block;
 }
@@ -94,11 +94,11 @@
   outline: none;
   cursor: pointer;
   position: absolute;
-  bottom: -5%;
+  bottom: -4%;
 }
 
 .prevBtn {
-  left: 7rem;
+  left: 3rem;
   transition: all 0.2s;
 
   &:hover {
@@ -109,7 +109,7 @@
 }
 
 .nextBtn {
-  right: 7rem;
+  right: 3rem;
   transition: all 0.2s;
 
   &:hover {
@@ -122,8 +122,8 @@
 .close {
   position: absolute;
   color: rgba(255, 255, 255, 0.6);
-  top: 7rem;
-  right: 5rem;
+  top: 1vh;
+  right: 2rem;
   font-size: 3rem;
   cursor: pointer;
   outline: none;
