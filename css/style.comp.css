@@ -71,6 +71,7 @@
   --color-grey-dark-3: hsl(0, 0%, 20%);
   --color-text-1: hsl(60, 70%, 45%);
   --text-shadow-violet: hsl(0, 93%, 17%);
+  --text-shadow-violet-lt: hsla(0, 93%, 17%, 0.3);
   --radius: 0.2rem; }
 
 *,
@@ -388,7 +389,7 @@ body {
 
 .art-main-gradient {
   background: var(--color-primary-dark);
-  background: linear-gradient(180deg, var(--color-primary, 1) 20%, var(--color-secondary, 1) 30%, var(--color-primary-light, 1) 100%);
+  background: linear-gradient(180deg, var(--color-primary, 1) 10%, var(--color-secondary, 1) 35%, var(--color-primary-light, 1) 100%);
   padding-bottom: 4rem; }
 
 .art-gallery {
@@ -405,7 +406,11 @@ body {
   font-style: normal;
   font-size: 2.5rem;
   color: var(--color-tertiary);
-  text-shadow: 0 0.2rem 0.3rem var(--text-shadow-violet); }
+  text-shadow: 0 0.2rem 0.3rem var(--text-shadow-violet);
+  transition: all 0.2s; }
+  .art-title1:hover {
+    text-shadow: 0 0.4rem 0.4rem var(--text-shadow-violet);
+    transform: scale(1.03); }
 
 .art-title2 {
   margin-bottom: 0.6rem;
@@ -426,11 +431,11 @@ body {
   font-size: 2.3rem;
   text-align: center;
   color: var(--color-text-1);
-  text-shadow: 0 0.2rem 1rem var(--text-shadow-violet);
+  text-shadow: 0 0.15rem 0.2rem var(--text-shadow-violet);
   transition: all 0.4s; }
   .art-header__God:hover {
-    text-shadow: 0 0.5rem 1rem var(--text-shadow-violet);
-    transform: scale(1.05); }
+    text-shadow: 0 0.3rem 0.5rem var(--text-shadow-violet);
+    transform: scale(1.03); }
 
 .art-poetry {
   margin: 0 auto;
@@ -439,13 +444,14 @@ body {
   font-family: annabelle-jf;
   text-align: center;
   color: var(--color-white-1);
-  text-shadow: 0rem 0.3rem 0.3rem var(--text-shadow-violet); }
+  text-shadow: 0rem 0.15rem 0.15rem var(--text-shadow-violet); }
 
 .art-news {
   margin-inline: auto;
   font-family: roboto, sans-serif;
   text-align: center;
-  color: var(--color-white-1); }
+  color: var(--color-white-1);
+  text-shadow: 0rem 0.15rem 0.15rem var(--text-shadow-violet); }
   .art-news__title {
     padding: 3rem 0 2rem;
     font-family: baskerville-urw, serif;
@@ -476,15 +482,15 @@ body {
     color: var(--color-tertiary); }
   .art-news__link {
     display: block;
-    margin-bottom: 2.5rem;
+    margin: 0 1rem 2.5rem;
     font-size: 1.4rem;
     text-decoration: none;
     color: var(--color-white-1);
     transition: all 0.2s; }
     .art-news__link:hover {
       filter: brightness(1.1);
-      text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
-      transform: scale(1.05) translateY(-0.2rem); }
+      text-shadow: 0 0.2rem 0.5rem var(--text-shadow-violet);
+      transform: scale(1.03) translateY(-0.2rem); }
   .art-news__movie {
     font-size: 1.4rem; }
     .art-news__movie-title {
@@ -498,7 +504,8 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 0rem 4rem 0rem 4rem;
-    list-style: none; }
+    list-style: none;
+    text-shadow: 0rem 0.05rem 0.05rem var(--text-shadow-violet); }
   .art-pinterest__item {
     font-size: 1.6rem; }
   .art-pinterest__link {
@@ -510,11 +517,12 @@ body {
     font-size: 1.2rem;
     border-radius: 0.5rem;
     color: var(--color-primary-dark);
-    transition: all 0.2s; }
+    transition: all 0.2s;
+    box-shadow: 0 0.02rem 0.5rem var(--text-shadow-violet-lt); }
     .art-pinterest__link:hover {
       filter: brightness(1.1);
-      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
-      transform: scale(1.05) translateY(-0.5rem); }
+      box-shadow: 0 0.09rem 1.5rem var(--text-shadow-violet-lt);
+      transform: scale(1.01) translateY(-0.5rem); }
     .art-pinterest__link span {
       padding-top: 1rem; }
   .art-pinterest__icon {
@@ -524,9 +532,10 @@ body {
     filter: saturate(0.8); }
 
 .art-myvideo__title1 {
-  margin-bottom: 1.5rem;
-  font-size: 1.4rem;
-  color: var(--color-white-1); }
+  margin: 0 0 1.5rem;
+  font-size: 1.3rem;
+  color: var(--color-white-1);
+  text-shadow: 0rem 0.15rem 0.15rem var(--text-shadow-violet); }
 
 .art-myvideo__flex {
   display: flex;
@@ -545,7 +554,7 @@ body {
   .art-myvideo__link:hover {
     outline: 1rem solid var(--color-tertiary);
     filter: brightness(1.1);
-    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2.5rem 4rem var(--text-shadow-violet);
     transform: scale(1.05) translateY(-0.2rem);
     z-index: 20; }
 
@@ -564,18 +573,19 @@ body {
   font-size: 1.8rem;
   text-align: center;
   color: var(--color-text-1);
-  text-shadow: 0 0.2rem 0.5rem var(--text-shadow-violet);
+  text-shadow: 0 0.2rem 0.2rem var(--text-shadow-violet);
   transition: all 0.2s; }
   .art-footer:hover {
-    text-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
-    transform: scale(1.1); }
+    text-shadow: 0 0.4rem 0.4rem var(--text-shadow-violet);
+    transform: scale(1.03); }
 
 .art-galleries-footer {
   color: var(--color-tertiary); }
 
 .art-pe-footer {
   font-size: 1.5rem;
-  color: var(--color-tertiary); }
+  color: var(--color-tertiary);
+  text-shadow: 0 0.1rem 0.2rem var(--text-shadow-violet); }
 
 .logo {
   display: inline-block;
