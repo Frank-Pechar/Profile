@@ -12,3 +12,5 @@ Artwork and Other Information
 9/28/2022 - Major modifications: Added new menu navigation to art pages. Added new art pages. Adopted BEM methodology. Added animations. Modifications to modal. Other misc changes.
 
 9/30/2022 - Several formatting modifications.
+
+11/11/2022 - Website navigation and page changes.
