@@ -8,7 +8,8 @@
   z-index: 2000;
   &__img {
     width: 100%;
-    box-shadow: 0 0rem 1rem 0.1rem var(--color-tertiary-dark);
+    // box-shadow: 0 0rem 1rem 0.1rem var(--color-tertiary-dark);
+    box-shadow: 0 0rem 0.5rem 0.2rem var(--color-text-1);
     border-radius: 50%;
     transition: all 0.4s;
     // filter: blur(0.02rem);
@@ -38,7 +39,8 @@
     height: 5rem;
     width: 5rem;
     border-radius: 50%;
-    box-shadow: 0 0rem 0.5rem 0.1rem var(--color-tertiary-dark);
+    // box-shadow: 0 0rem 0.5rem 0.1rem var(--color-tertiary-dark);
+    box-shadow: 0 0rem 0.5rem 0.2rem var(--color-text-1);
     text-align: center;
     cursor: pointer;
     z-index: 2000;
@@ -103,14 +105,14 @@
       font-size: 3rem;
       font-weight: 300;
       padding: 1rem 2rem;
-      color: var(--color-tertiary);
+      color: var(--color-tertiary-dark);
       text-decoration: none;
       text-transform: uppercase;
       background-image: linear-gradient(
         120deg,
         transparent 0%,
         transparent 50%,
-        var(--color-tertiary) 50%
+        var(--color-tertiary-dark) 50%
       );
       background-size: 220%;
       transition: all 0.4s;
@@ -159,14 +161,14 @@
       width: 3rem;
       height: 0.2rem;
       // background-color: hsla(var(--color-tertiary) 0.2);
-      background-color: hsla(10, 80%, 48%, 0.8);
+      background-color: var(--color-tertiary-dark);
 
       display: inline-block;
     }
 
     &::before,
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       transition: all 0.2s;

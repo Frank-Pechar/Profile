@@ -10,12 +10,12 @@
 
   border: 0.75rem solid var(--color-grey-dark-2);
   border-radius: 0.5rem;
-  box-shadow: 0 0.2rem 0.5rem var(--color-grey-dark-2);
+  box-shadow: 0 0.4rem 0.5rem black;
 
   &:hover {
     transform: scale(1.03);
     filter: brightness(105%);
-    box-shadow: 0 0.4rem 0.8rem var(--color-grey-dark-2);
+    box-shadow: 0 0.6rem 0.8rem black;
     cursor: pointer;
   }
 
@@ -51,7 +51,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: black;
   color: #fff;
   z-index: 10000;
   overflow: auto;
@@ -69,10 +69,15 @@
 }
 
 .modalImg {
+  width: 100%;
+  object-fit: contain;
   margin-top: 2rem;
   max-height: 80vh;
   max-width: 80vw;
   display: block;
+  // border: 1.25rem solid var(--color-grey-dark-2);
+  // border-radius: 0.5rem;
+  // box-shadow: 0 0.4rem 0.5rem black;
 }
 
 .modalTxt {
@@ -87,10 +92,10 @@
 
 .modalNav .button {
   padding: 0.5rem 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   background: none;
   color: #fff;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
   outline: none;
   cursor: pointer;
   position: absolute;
@@ -121,7 +126,7 @@
 
 .close {
   position: absolute;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.2);
   top: 1vh;
   right: 2rem;
   font-size: 3rem;
