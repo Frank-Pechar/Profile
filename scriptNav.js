@@ -30,23 +30,23 @@ if (artNav) {
         >
       </li>
       <li class="navigation__item">
+        <a href="index-art-photo-effects.html" class="navigation__link"
+          >Photo Effects</a
+        >
+      </li>			
+      <li class="navigation__item">
         <a href="index-art-photo-edit.html" class="navigation__link"
           >Photo Editing</a
         >
       </li>
       <li class="navigation__item">
-        <a href="index-art-photo-effects.html" class="navigation__link"
-          >Photo Effects</a
+        <a href="index-art-digital-fusion.html" class="navigation__link"
+          >Digital Fusion Art</a
         >
       </li>
       <li class="navigation__item">
-        <a href="index-art-css-effects.html" class="navigation__link"
-          >CSS Effects</a
-        >
-      </li>
-      <li class="navigation__item">
-        <a href="index-art-js-effects.html" class="navigation__link"
-          >JavaScript Effects</a
+        <a href="index-art-js-css-effects.html" class="navigation__link"
+          >JavaScript / CSS Effects</a
         >
       </li>
       <li class="navigation__item">
