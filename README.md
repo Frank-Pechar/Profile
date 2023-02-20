@@ -2,6 +2,8 @@
 
 Artwork and Other Information
 
+02/20/2023 - Added and rearranged images.
+
 02/18/2023 - Added three new pages with images: photo-edits, photo effects and digital fusion art. Also, minor color theme chages and navigation.
 
 11/11/2022 - Website navigation and page changes.
