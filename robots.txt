@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: assets/img/photo-edits/
+Disallow: assets/img/photo-effects/
+Disallow: assets/img/images-projects/
+Disallow: assets/img/image-wk/
+Disallow: assets/img/images-main/
