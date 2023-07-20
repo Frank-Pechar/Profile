@@ -1,0 +1,69 @@
+:root {
+  @include css-variables;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  // This defines what 1rem is
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+  font-size: clamp(0.5rem, 1.5vw, 1rem); //fluid font-size}
+}
+
+body {
+  font-family: 'roboto', sans-serif;
+  font-weight: 300;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(
+    circle,
+    var(--color-main-background-light) 40%,
+    var(--color-main-background-dark) 70%
+  );
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  z-index: 1;
+}
+
+.body-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+main {
+  margin-bottom: 3rem;
+}
+
+.footer {
+  @include animated-gradient-mixin;
+  padding: 1.5rem;
+  font-family: 'tangier', sans-serif;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.1rem;
+  text-align: center;
+  color: var(--color-tertiary-dark);
+  text-shadow: 0 0.2rem 0.2rem var(--text-shadow-violet);
+  transition: all 0.2s;
+  margin-top: auto;
+
+  &:hover {
+    text-shadow: 0 0.4rem 0.4rem var(--text-shadow-violet);
+    transform: scale(1.03);
+  }
+}
