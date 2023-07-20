@@ -87,15 +87,18 @@
   --color-secondary: hsl(107, 86%, 25%);
   --color-secondary: hsl(107, 65%, 25%);
   --color-tertiary-dark: hsl(18, 87%, 36%);
+  --color-tertiary-dark: hsl(40, 100%, 63%);
   --color-tertiary-dark-grad: hsla(18, 60%, 50%, 50%);
   --color-tertiary: hsl(18, 81%, 42%);
+  --color-tertiary: hsl(40, 100%, 63%);
   --color-white-1: seashell;
   --color-grey-light-1: hsl(0, 0%, 80%);
   --color-grey-light-2: hsl(0, 0%, 70%);
   --color-grey-dark-1: hsl(0, 0%, 45%);
   --color-grey-dark-2: hsl(0, 0%, 30%);
   --color-grey-dark-3: hsl(0, 0%, 20%);
-  --color-text-1: hsl(40, 70%, 63%);
+  --color-text-1: hsl(40, 90%, 63%);
+  --color-text-1: hsl(25.36deg 100% 77.21%);
   --text-shadow-violet: hsl(0, 93%, 17%);
   --text-shadow-violet-lt: hsla(0, 93%, 17%, 0.3);
   --radius: 0.2rem;
@@ -268,13 +271,9 @@ body {
 }
 
 .body {
-  background: var(--color-primary-dark);
-  background: linear-gradient(
-    180deg,
-    var(--color-primary, 1) 10%,
-    var(--color-secondary, 1) 35%,
-    var(--color-primary-light, 1) 100%
-  );
+  background-image: url('../img/background.webp');
+  background-size: cover;
+  background-position: center;
 }
 
 .art-title1 {
@@ -350,7 +349,6 @@ body {
   font-family: baskerville-urw, serif;
   font-size: 1.8rem;
   font-style: italic;
-  font-weight: 900;
   color: var(--color-tertiary);
 }
 .interests-news__henry-name {
@@ -369,7 +367,6 @@ body {
 .interests-news__title3 {
   margin-bottom: 2.5rem;
   font-size: 1.7rem;
-  font-weight: 700;
   color: var(--color-tertiary);
 }
 .interests-news__link {
@@ -402,7 +399,6 @@ body {
   justify-content: space-around;
   padding: 0rem 4rem 0rem 4rem;
   list-style: none;
-  text-shadow: 0rem 0.05rem 0.05rem var(--text-shadow-violet);
 }
 .interests-pinterest__item {
   font-size: 1.6rem;
@@ -426,14 +422,14 @@ body {
   box-shadow: 0 0.09rem 1.5rem var(--text-shadow-violet-lt);
   transform: scale(1.01);
 }
-.interests-pinterest__link span {
+.interests-pinterest__link h2 {
+  font-size: 1.2rem;
   padding-top: 1rem;
 }
 .interests-pinterest__icon {
   width: 4.5rem;
   height: 4.5rem;
-  fill: var(--color-tertiary-dark);
-  filter: saturate(0.8);
+  fill: var(--color-tertiary);
 }
 
 .interests-myvideo__title1 {
@@ -479,9 +475,9 @@ body {
   background: linear-gradient(
     90deg,
     var(--color-primary-dark) 20%,
-    var(--color-primary) 30%,
-    var(--color-tertiary-dark-grad) 50%,
-    var(--color-primary) 60%,
+    var(--color-primary-light) 40%,
+    var(--color-tertiary) 50%,
+    var(--color-primary-light) 60%,
     var(--color-primary-dark) 80%
   );
   background-size: 800% 800%;
@@ -606,9 +602,9 @@ body {
   background: linear-gradient(
     90deg,
     var(--color-primary-dark) 20%,
-    var(--color-primary) 30%,
-    var(--color-tertiary-dark-grad) 50%,
-    var(--color-primary) 60%,
+    var(--color-primary-light) 40%,
+    var(--color-tertiary) 50%,
+    var(--color-primary-light) 60%,
     var(--color-primary-dark) 80%
   );
   background-size: 800% 800%;
@@ -634,9 +630,8 @@ body {
   top: 2.25rem;
   right: 2.25rem;
   background: radial-gradient(
-    var(--color-primary-dark) 1%,
-    var(--color-primary) 10%,
-    var(--color-primary-light) 25%
+    var(--color-primary-dark) 15%,
+    var(--color-primary-light) 40%
   );
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
   z-index: 1000;
