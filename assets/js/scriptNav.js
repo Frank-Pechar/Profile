@@ -1,21 +1,35 @@
 'use strict';
 
-const artNav = document.querySelector('.art-nav');
+const nav = document.querySelector('.nav-js');
+const bodyBackground = document.querySelector('.body-background-js');
+
+if (bodyBackground) {
+  bodyBackground.innerHTML = `
+    <div class="body-background">
+      <div class="starfield">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>`;
+}
 
 const src =
-  document.body.class === 'art-main-body'
-    ? 'assets/img/Logo-Frank-Pechar.webp'
-    : '../assets/img/Logo-Frank-Pechar.webp';
+  document.body.class === 'body-home'
+    ? 'assets/img/Logo-Frank-Pechar3c.webp'
+    : '../assets/img/Logo-Frank-Pechar3c.webp';
 
-artNav.innerHTML = `
-
-<div class="navigation">
-  <div class="logo">
-    <img
-      class="logo__img"
-      src=${src}
-      alt="Logo for Frank Pechar. Abstract. Diagonal angular shapes in perspective from foreground to background.  Dominant color is blue."
-    />
+nav.innerHTML = `
+  <div class="navigation">
+    <div class="logo">
+    <a href="../index.html"> 
+      <img
+        class="logo__img"
+        src=${src}
+        alt="Logo for Frank Pechar. Abstract. Diagonal angular shapes in perspective from foreground to background.  Dominant color is blue."
+      />
+    </a>
   </div>
 
   <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
@@ -54,9 +68,26 @@ artNav.innerHTML = `
         >
       </li>
       <li class="navigation__item">
-        <a href="../index.html" class="navigation__link">Main Art Page</a>
+      <a href="../html-pages/other-interests.html" class="navigation__link"
+        >Other Interests</a
+      >
+    </li>
+      <li class="navigation__item">
+        <a href="../index.html" class="navigation__link">Main Page</a>
       </li>
     </ul>
   </nav>
 </div>
 `;
+
+function check() {
+  const checkButton = document.getElementById('navi-toggle');
+  checkButton.checked = true;
+}
+
+// window.onload = function () {
+//   window.addEventListener('load', check, false);
+// };
+
+// const triangleBtn = document.getElementsByClassName('rounded-triangle--2');
+// triangleBtn[0].addEventListener('click', checkBtn);

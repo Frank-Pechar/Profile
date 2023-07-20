@@ -1,12 +1,5 @@
 'use strict';
 
-// const artModal = document.querySelector(".modal");
-// fetch("/index-art-modal.html")
-//   .then((res) => res.text())
-//   .then((data) => {
-//     artModal.innerHTML = data;
-//   });
-
 const modal = document.querySelector('.modal');
 modal.innerHTML = `    
   <div class="modalContent">
@@ -21,17 +14,28 @@ modal.innerHTML = `
 `;
 
 const images = document.querySelectorAll('.card__img-thumb');
-const modalImg = document.querySelector('.modalImg');
+let modalImg = document.querySelector('.modalImg');
 const modalTxt = document.querySelector('.modalTxt');
 const close = document.querySelector('.close');
 const prevBtn = document.querySelector('.prevBtn');
 const nextBtn = document.querySelector('.nextBtn');
 
+function onAnimationEnd() {
+  modalImg.style.animationName = 'none';
+}
+
+function animate(i) {
+  modalImg.src = images[i].src;
+  modalImg.style.animationName = 'fadeInImg';
+  modalImg.addEventListener('animationend', onAnimationEnd);
+}
+
 images.forEach((image, index) => {
   image.addEventListener('click', () => {
     modalImg.src = image.src;
-    // modalTxt.innerHTML = image.alt;
     modal.classList.add('appear');
+    modalImg.style.animationName = 'fadeInImg';
+    modalImg.addEventListener('animationend', onAnimationEnd);
     let imageIndex = index;
     let next = imageIndex + 1;
     let prev = imageIndex - 1;
@@ -63,15 +67,13 @@ images.forEach((image, index) => {
     });
 
     function nextImg() {
-      modalImg.src = images[next].src;
-      // modalTxt.innerHTML = images[next].alt;
+      animate(next);
       next++;
       prev = next - 2;
     }
 
     function prevImg() {
-      modalImg.src = images[prev].src;
-      // modalTxt.innerHTML = images[prev].alt;
+      animate(prev);
       prev--;
       next = prev + 2;
     }
