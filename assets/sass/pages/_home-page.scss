@@ -1,0 +1,64 @@
+.h1-home {
+  text-align: center;
+  font-family: 'alexa-std', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color-tertiary-dark);
+  font-size: 3.7rem;
+  margin: 3rem 0 1.5rem 0;
+  animation: moveInTop 3s ease-out;
+  animation-fill-mode: backwards;
+  z-index: 1000;
+
+  @media only screen and (max-width: 25em) {
+    margin: 3rem 0 0 -7vw;
+    display: flex;
+    flex-direction: column;
+    font-size: 4rem;
+    & :last-child {
+      margin-top: 1.5rem;
+      margin-left: 20vw;
+    }
+  }
+}
+
+.h2-home {
+  position: relative;
+  font-family: 'montag', sans-serif;
+  color: #fff;
+  font-weight: 300;
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
+  z-index: 500;
+
+  > * {
+    display: block;
+    position: absolute;
+  }
+
+  & :first-child {
+    margin-top: 18vh;
+    margin-left: 12vw;
+    animation: moveInLeft 3s ease-out;
+    animation-fill-mode: backwards;
+
+    &:first-letter {
+      font-size: 3.5rem;
+    }
+  }
+
+  & :nth-child(2) {
+    line-height: 2;
+    margin-top: 28vh;
+    margin-left: 27vw;
+    animation: moveInLeft 3s ease-out 0.5s;
+    animation-fill-mode: backwards;
+  }
+
+  & :last-child {
+    margin-top: 38vh;
+    margin-left: 42vw;
+    animation: moveInLeft 3s ease-out 1s;
+    animation-fill-mode: backwards;
+  }
+}

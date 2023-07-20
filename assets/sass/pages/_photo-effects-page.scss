@@ -1,0 +1,15 @@
+@media only screen and (max-width: 26em) {
+  .heading-art1.heading-photo-effects1 {
+    & :first-child {
+      display: block;
+      margin: 0 0 0.5rem 0;
+      font-size: 3rem;
+    }
+    & :last-child {
+      display: block;
+    }
+  }
+  .heading-art2.heading-photo-effects2 {
+    font-size: 1.3rem;
+  }
+}

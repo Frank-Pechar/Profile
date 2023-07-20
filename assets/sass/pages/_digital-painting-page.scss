@@ -1,0 +1,15 @@
+@media only screen and (max-width: 28.5em) {
+  .heading-art1.heading-digital-painting1 {
+    & :first-child {
+      display: block;
+      margin: 0 0 0.5rem 0;
+      font-size: 3rem;
+    }
+    & :last-child {
+      display: block;
+    }
+  }
+  .heading-art2.heading-digital-painting2 {
+    font-size: 1.3rem;
+  }
+}
