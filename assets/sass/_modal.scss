@@ -1,17 +1,30 @@
 .card-columns {
-  -webkit-column-count: 2;
-  column-count: 2;
-  margin-inline: 1.5rem;
+  margin: 0 2rem 0 2rem;
+  columns: 2;
+  column-gap: 1.5rem;
+
+  @media only screen and (min-width: 768px) {
+    columns: 3;
+  }
+
+  @media only screen and (min-width: 992px) {
+    columns: 4;
+  }
 }
 
 .card__img {
-  margin: 0 auto 1.5rem auto;
+  &:not(:first-of-type) {
+    margin-top: 1.5rem;
+  }
+  min-height: 100%;
   transition: all ease-in-out 0.2s;
-
+  position: relative;
   border: 0.75rem solid var(--color-grey-dark-2);
   border-radius: 0.5rem;
-  box-shadow: 0 0.4rem 0.5rem black;
-
+  &:before {
+    content: '';
+    position: absolute;
+  }
   &:hover {
     transform: scale(1.03);
     filter: brightness(105%);
@@ -20,30 +33,12 @@
   }
 
   img {
+    -webkit-column-break-inside: avoid;
     width: 100%;
     display: block;
+    min-height: 100%;
   }
 }
-
-// @media only screen and (min-width: 576px) {
-// }
-
-@media only screen and (min-width: 768px) {
-  .card-columns {
-    -webkit-column-count: 3;
-    column-count: 3;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .card-columns {
-    -webkit-column-count: 4;
-    column-count: 4;
-  }
-}
-
-// @media only screen and (min-width: 1200px) {
-// }
 
 .modal {
   position: fixed;
@@ -75,9 +70,9 @@
   max-height: 80vh;
   max-width: 80vw;
   display: block;
-  // border: 1.25rem solid var(--color-grey-dark-2);
-  // border-radius: 0.5rem;
-  // box-shadow: 0 0.4rem 0.5rem black;
+  transform-origin: top;
+  animation: scale 1s ease-out;
+  animation-fill-mode: backwards;
 }
 
 .modalTxt {
@@ -92,9 +87,9 @@
 
 .modalNav .button {
   padding: 0.5rem 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
   background: none;
-  color: #fff;
   color: rgba(255, 255, 255, 0.5);
   outline: none;
   cursor: pointer;
@@ -126,7 +121,7 @@
 
 .close {
   position: absolute;
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.5);
   top: 1vh;
   right: 2rem;
   font-size: 3rem;
@@ -147,7 +142,7 @@
   pointer-events: all;
 }
 
-.modal.appear .modalImg,
-.modal.appear .modalTxt {
-  animation: zoom 0.3s linear;
+.fadeInImg {
+  opacity: 0;
+  transition: all 0.5s ease-out;
 }
