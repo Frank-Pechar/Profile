@@ -1,15 +1,13 @@
-@media only screen and (max-width: 26.5em) {
+@media only screen and (max-width: 31.5em) {
   .heading-art1.heading-photo-editing1 {
     & :first-child {
       display: block;
       margin: 0 0 0.5rem 0;
-      font-size: 3rem;
+      font-size: calc(3vw + 1.2rem);
     }
     & :last-child {
       display: block;
+      font-size: calc(1.8vw + 1.2rem);
     }
-  }
-  .heading-art2.heading-photo-editing2 {
-    font-size: 1.3rem;
   }
 }

@@ -1,9 +1,9 @@
 .interests-heading-god {
   padding-top: 3.5rem;
-  font-family: annabelle-jf, serif;
-  font-weight: 300;
+  font-family: 'tangier', sans-serif;
+  font-weight: 500;
   font-style: normal;
-  font-size: 2.3rem;
+  font-size: 3.2rem;
   letter-spacing: 0.1rem;
   text-align: center;
   color: var(--color-tertiary-dark);
@@ -17,7 +17,7 @@
     transform: scale(1.03);
   }
 
-  @media only screen and (max-width: 30.3em) {
+  @media only screen and (max-width: 32em) {
     margin-top: 6rem;
   }
 }
@@ -25,9 +25,11 @@
 .interests-poetry {
   margin: 0 auto;
   padding-bottom: 3rem;
-  font-size: 2rem;
-  font-family: annabelle-jf, serif;
+  font-size: 3rem;
+  font-family: 'tangier', sans-serif;
   font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.2rem;
   text-align: center;
   color: var(--color-white-1);
   text-shadow: 0rem 0.15rem 0.15rem var(--text-shadow-violet);
@@ -41,7 +43,6 @@
 
   &__title {
     padding-bottom: 2rem;
-    font-family: baskerville-urw, serif;
     font-weight: 400;
     letter-spacing: 0.15rem;
     font-style: normal;
@@ -49,7 +50,6 @@
   }
 
   &__henry-quote {
-    font-family: baskerville-urw, serif;
     font-size: 1.8rem;
     font-style: italic;
     font-weight: 400;
@@ -118,7 +118,7 @@
 
     &:hover {
       filter: brightness(1.5) saturate(1.5);
-      box-shadow: 0 0.09rem 1.5rem var(--text-shadow-violet-lt);
+      box-shadow: 0 0.09rem 1.5rem var(--text-shadow-violet);
       transform: scale(1.1) translateY(-0.3rem);
     }
   }
@@ -171,7 +171,7 @@
     margin-bottom: 1rem;
     width: 60%;
     border-radius: 0.2rem;
-    box-shadow: 0 0.02rem 0.5rem var(--text-shadow-violet-lt);
+    box-shadow: 0 0.02rem 0.5rem var(--text-shadow-violet);
     box-shadow: 0 0.05rem 0.7rem 0.1rem #555;
     outline-offset: 0.7rem;
     filter: brightness(0.9);
@@ -199,4 +199,10 @@ hr {
   height: 0.3rem;
   margin: 4rem auto 4rem auto;
   border: none;
+}
+
+.interests-footer {
+  font-family: 'tangier', sans-serif;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
 }
