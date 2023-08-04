@@ -8,6 +8,7 @@
   margin: 3rem 0 1.5rem 0;
   animation: moveInTop 3s ease-out;
   animation-fill-mode: backwards;
+  position: relative;
   z-index: 1000;
   transition: all 0.2s ease-in-out;
 
