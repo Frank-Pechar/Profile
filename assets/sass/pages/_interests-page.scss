@@ -3,7 +3,7 @@
   font-family: 'tangier', sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 3.2rem;
+  font-size: 3.3rem;
   letter-spacing: 0.1rem;
   text-align: center;
   color: var(--color-tertiary-dark);
@@ -25,7 +25,7 @@
 .interests-poetry {
   margin: 0 auto;
   padding-bottom: 3rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: 'tangier', sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -50,9 +50,9 @@
   }
 
   &__henry-quote {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-style: italic;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0.1rem;
     color: var(--color-tertiary-dark);
   }
@@ -106,11 +106,17 @@
   &__list {
     display: flex;
     justify-content: space-around;
-    padding: 0rem 4rem 0rem 4rem;
+    margin-inline: 4rem;
     list-style: none;
+    @media only screen and (max-width: 22.5em) {
+      margin: 0;
+    }
   }
 
   &__item {
+    min-width: 6rem;
+    max-width: 10rem;
+    flex: 1 1 0;
     font-size: 1.6rem;
     background-color: hsla(0, 0%, 100%, 0.4);
     border-radius: 0.5rem;
@@ -138,6 +144,7 @@
       color: var(--color-white-1);
       font-weight: 300;
       font-size: 1.2rem;
+      text-shadow: 0rem 0.15rem 0.15rem var(--text-shadow-violet);
       padding-top: 1rem;
     }
   }
@@ -154,7 +161,7 @@
   &__title1 {
     margin-bottom: 1rem;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: var(--color-white-1);
     text-shadow: 0rem 0.15rem 0.15rem var(--text-shadow-violet);
   }
@@ -205,4 +212,29 @@ hr {
   font-family: 'tangier', sans-serif;
   font-size: 3rem;
   letter-spacing: 0.1rem;
+}
+
+@media only screen and (max-width: 22.5em) {
+  .interests-heading-god {
+    font-size: 2.8rem;
+  }
+  .interests-news {
+    &__title {
+      font-size: 1.8rem;
+    }
+    &__henry-quote,
+    &__henry-name,
+    &__title2 {
+      font-size: 1.4rem;
+    }
+    &__title3 {
+      font-size: 1.6rem;
+    }
+    &__link {
+      font-size: 1.3rem;
+    }
+  }
+  .interests-poetry {
+    font-size: 2.2rem;
+  }
 }
