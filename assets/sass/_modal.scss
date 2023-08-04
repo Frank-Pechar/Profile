@@ -16,15 +16,18 @@
   &:not(:first-of-type) {
     margin-top: 1.5rem;
   }
+
   min-height: 100%;
   transition: all ease-in-out 0.2s;
   position: relative;
-  border: 0.75rem solid var(--color-grey-dark-2);
+  border: 0.75rem solid hsl(0, 0%, 30%);
   border-radius: 0.5rem;
+
   &:before {
     content: '';
     position: absolute;
   }
+
   &:hover {
     transform: scale(1.03);
     filter: brightness(105%);
@@ -71,7 +74,7 @@
   max-width: 80vw;
   display: block;
   transform-origin: top;
-  animation: scale 1s ease-out;
+  animation: scale 0.75s ease-out;
   animation-fill-mode: backwards;
 }
 
@@ -102,9 +105,9 @@
   transition: all 0.2s;
 
   &:hover {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.6);
     transform: scale(1.1);
-    border-color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 0.4);
   }
 }
 
@@ -113,9 +116,9 @@
   transition: all 0.2s;
 
   &:hover {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.6);
     transform: scale(1.1);
-    border-color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 0.4);
   }
 }
 
@@ -140,9 +143,4 @@
 .modal.appear {
   opacity: 1;
   pointer-events: all;
-}
-
-.fadeInImg {
-  opacity: 0;
-  transition: all 0.5s ease-out;
 }

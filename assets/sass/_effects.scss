@@ -40,23 +40,6 @@ $left-counter: 10vw;
   }
 }
 
-.circle {
-  height: 7rem;
-  width: 7rem;
-  border-radius: 50%;
-  animation: scale 2s ease-out;
-  background: greenyellow;
-  background: linear-gradient(
-    -140deg,
-    hsla(60, 100%, 50%, 0.6) 20%,
-    hsla(130, 100%, 50%, 0.6)
-  );
-  position: absolute;
-  z-index: 300;
-  top: 2rem;
-  right: 5rem;
-}
-
 .rounded-triangle {
   background-image: url(../img/Rounded-triangle2.svg);
   background-repeat: no-repeat;
@@ -91,10 +74,11 @@ $left-counter: 10vw;
     margin-bottom: 2rem;
     justify-content: center;
     text-decoration: none;
-    font-family: 'montag', sans-serif;
+    font-family: 'roboto', sans-serif;
     color: #fff;
     font-weight: 300;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
+    line-height: 1.1;
     text-shadow: 0rem 0rem 0.5rem var(--text-shadow-violet-dk);
   }
 }
@@ -108,6 +92,7 @@ $left-counter: 10vw;
   bottom: 14vh;
   left: 50vw;
 }
+
 .sun {
   position: absolute;
   top: 50%;
@@ -124,7 +109,7 @@ $left-counter: 10vw;
     background: -webkit-radial-gradient(
       center,
       ellipse cover,
-      var(--color-main-grad-star) 0%,
+      var(--color-main-star) 0%,
       rgba(255, 255, 255, 0) 50%
     );
     opacity: 1;
@@ -133,7 +118,7 @@ $left-counter: 10vw;
     background: -webkit-radial-gradient(
       center,
       ellipse cover,
-      var(--color-main-grad-star) 0%,
+      var(--color-main-star) 0%,
       rgba(255, 255, 255, 0) 50%
     );
     opacity: 0.5;
@@ -275,7 +260,7 @@ $left-counter: 10vw;
   width: 100%;
   height: 100%;
   overflow: hidden;
-  animation: fadein 5s;
+  animation: appear 2s;
   z-index: -10;
 }
 
@@ -294,11 +279,23 @@ $left-counter: 10vw;
       #ccc,
       rgba(0, 0, 0, 0)
     ),
-    radial-gradient(3.7px 3.7px at 20px 20px, var(--white), rgba(0, 0, 0, 0)),
-    radial-gradient(3px 3px at 30px 100px, var(--white), rgba(0, 0, 0, 0)),
-    radial-gradient(4px 4px at 40px 40px, var(--white), rgba(0, 0, 0, 0)),
-    radial-gradient(4.4px 4.4px at 110px 80px, var(--white), rgba(0, 0, 0, 0)),
-    radial-gradient(3.4px 3.4px at 190px 150px, var(--white), rgba(0, 0, 0, 0));
+    radial-gradient(
+      3.7px 3.7px at 20px 20px,
+      var(--star-gray),
+      rgba(0, 0, 0, 0)
+    ),
+    radial-gradient(3px 3px at 30px 100px, var(--star-gray), rgba(0, 0, 0, 0)),
+    radial-gradient(4px 4px at 40px 40px, var(--star-gray), rgba(0, 0, 0, 0)),
+    radial-gradient(
+      4.4px 4.4px at 110px 80px,
+      var(--star-gray),
+      rgba(0, 0, 0, 0)
+    ),
+    radial-gradient(
+      3.4px 3.4px at 190px 150px,
+      var(--star-gray),
+      rgba(0, 0, 0, 0)
+    );
 
   background-position: center;
   background-repeat: repeat;
@@ -341,17 +338,9 @@ $left-counter: 10vw;
     opacity: 0;
     transform: scale(0.1);
   }
+
   100% {
     opacity: 1;
     transform: scale(1);
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }
