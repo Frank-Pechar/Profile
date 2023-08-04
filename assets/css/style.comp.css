@@ -780,7 +780,7 @@ main {
   font-family: 'tangier', sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 3.2rem;
+  font-size: 3.3rem;
   letter-spacing: 0.1rem;
   text-align: center;
   color: var(--color-tertiary-dark);
@@ -797,7 +797,7 @@ main {
 .interests-poetry {
   margin: 0 auto;
   padding-bottom: 3rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: 'tangier', sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -818,9 +818,9 @@ main {
     font-style: normal;
     font-size: 2rem; }
   .interests-news__henry-quote {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-style: italic;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0.1rem;
     color: var(--color-tertiary-dark); }
   .interests-news__henry-name {
@@ -858,9 +858,15 @@ main {
   .interests-pinterest__list {
     display: flex;
     justify-content: space-around;
-    padding: 0rem 4rem 0rem 4rem;
+    margin-inline: 4rem;
     list-style: none; }
+    @media only screen and (max-width: 22.5em) {
+      .interests-pinterest__list {
+        margin: 0; } }
   .interests-pinterest__item {
+    min-width: 6rem;
+    max-width: 10rem;
+    flex: 1 1 0;
     font-size: 1.6rem;
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 0.5rem;
@@ -883,6 +889,7 @@ main {
       color: var(--color-white-1);
       font-weight: 300;
       font-size: 1.2rem;
+      text-shadow: 0rem 0.15rem 0.15rem var(--text-shadow-violet);
       padding-top: 1rem; }
   .interests-pinterest__icon {
     width: 4.5rem;
@@ -893,7 +900,7 @@ main {
 .interests-myvideo__title1 {
   margin-bottom: 1rem;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: var(--color-white-1);
   text-shadow: 0rem 0.15rem 0.15rem var(--text-shadow-violet); }
 
@@ -936,6 +943,20 @@ hr {
   font-family: 'tangier', sans-serif;
   font-size: 3rem;
   letter-spacing: 0.1rem; }
+
+@media only screen and (max-width: 22.5em) {
+  .interests-heading-god {
+    font-size: 2.8rem; }
+  .interests-news__title {
+    font-size: 1.8rem; }
+  .interests-news__henry-quote, .interests-news__henry-name, .interests-news__title2 {
+    font-size: 1.4rem; }
+  .interests-news__title3 {
+    font-size: 1.6rem; }
+  .interests-news__link {
+    font-size: 1.3rem; }
+  .interests-poetry {
+    font-size: 2.2rem; } }
 
 @media only screen and (max-width: 34.5em) {
   .heading-art1.heading-digital-painting1 :first-child {
