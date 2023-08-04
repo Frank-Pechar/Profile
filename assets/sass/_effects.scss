@@ -36,7 +36,7 @@ $left-counter: 10vw;
     clip-path: polygon(50% 0%, 0% 80%, 100% 80%);
     animation: moveInDiagTopLeft 2s ease-out calc(0.7s + calc(0.3s * #{$i}));
     animation-fill-mode: backwards;
-    z-index: calc(30 - #{$i});
+    z-index: calc(40 - #{$i});
   }
 }
 
@@ -100,7 +100,7 @@ $left-counter: 10vw;
   transform: translate(-50%, -50%);
   width: 100vw;
   height: 100vw;
-  z-index: 50;
+  z-index: 1;
   animation: pulse 2.5s ease-in-out infinite alternate;
 }
 
