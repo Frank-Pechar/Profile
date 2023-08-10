@@ -344,6 +344,7 @@
   --color-main-star: hsla(48, 100%, 50%, 1);
   --star-gray: #bbafc863;
   --color-primary: hsl(205, 65%, 32%);
+  --color-primary-light: hsl(205, 65%, 52%);
   --color-secondary: hsl(205, 65%, 32%);
   --color-tertiary: hsl(40, 100%, 63%);
   --color-tertiary-dark: hsl(45, 100%, 63%);
