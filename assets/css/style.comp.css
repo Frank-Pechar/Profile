@@ -365,6 +365,7 @@ html {
   font-size: clamp(0.5rem, 1.5vw, 1rem); }
 
 body {
+  min-height: 100vh;
   min-height: 100svh;
   background: radial-gradient(circle, var(--color-main-background) 40%, var(--color-main-background-dark) 70%);
   position: relative;
@@ -373,7 +374,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  z-index: 100; }
+  z-index: 1; }
 
 .body-background {
   position: absolute;
