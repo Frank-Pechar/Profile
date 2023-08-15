@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  min-height: 100vh;
+  min-height: 100svh;
   background: radial-gradient(
     circle,
     var(--color-main-background) 40%,
@@ -28,6 +28,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
+  z-index: 100;
 }
 
 .body-background {
