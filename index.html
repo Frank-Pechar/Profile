@@ -2,11 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"
+    />
     <meta name="author" content="Frank Pechar" />
     <meta
       name="description"
-      content="Portfolio of Web and Graphic Design and Development Projects including Artwork by Frank Pechar - also Environmental Concerns, Exercise for Herniated L4 L5 Disc, Pinterest Links for Leaders, Poetry and Prose Quotes"
+      content="Portfolio of Web and Graphic Design and Development Projects including Artwork by Frank Pechar"
     />
     <link rel="stylesheet" href="https://use.typekit.net/yck5mhw.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -18,8 +21,8 @@
   </head>
 
   <body class="body body-home">
-    <nav class="nav-js"></nav>
     <header>
+      <nav class="nav-js"></nav>
       <h1 class="h1-home">
         <span>Portfolio - </span>
         <span>frank pechar</span>
@@ -48,16 +51,23 @@
         <div class="sm-triangle8"></div>
         <div class="sm-triangle9"></div>
       </div>
-      <div class="lg-triangle1"></div>
-      <div class="lg-triangle2"></div>
-      <div class="lg-triangle3"></div>
-      <div class="rounded-triangle rounded-triangle--1">
-        <a class="rounded-triangle-text" href="../html-pages/web-projects.html"
-          >Projects</a
+      <div class="lg-triangle-group">
+        <div class="lg-triangle1"></div>
+        <div class="lg-triangle2"></div>
+        <div class="lg-triangle3"></div>
+        <div class="rounded-triangle rounded-triangle--1">
+          <a
+            class="rounded-triangle-text"
+            href="../html-pages/web-projects.html"
+            >Projects</a
+          >
+        </div>
+        <div
+          class="rounded-triangle rounded-triangle--2 check"
+          onclick="checkNav()"
         >
-      </div>
-      <div class="rounded-triangle rounded-triangle--2 check" onclick="check()">
-        <div class="rounded-triangle-text">Menu</div>
+          <div class="rounded-triangle-text">Menu</div>
+        </div>
       </div>
     </div>
   </body>

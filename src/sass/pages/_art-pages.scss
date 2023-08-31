@@ -1,0 +1,26 @@
+.heading-art1 {
+  padding: 2rem 0 1.5rem 0;
+  font-family: quiche-sans, sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+  font-style: normal;
+  letter-spacing: 0.2rem;
+  color: var(--color-yellow1);
+  text-shadow: 0 0.2rem 0.3rem var(--text-shadow-violet);
+  transition: all 0.2s;
+
+  &:hover {
+    text-shadow: 0 0.4rem 0.4rem var(--text-shadow-violet);
+    transform: scale(1.03);
+  }
+}
+
+.heading-art2,
+.heading-art3 {
+  margin-bottom: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 200;
+  font-style: italic;
+  color: var(--color-yellow1);
+  text-shadow: 0 0.2rem 0.3rem var(--text-shadow-violet);
+}
