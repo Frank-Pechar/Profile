@@ -1,12 +1,12 @@
-#Portfolio for Frank Pechar
+# Portfolio for Frank Pechar
 
-##JavaScript, CSS/SCSS and React Projects
+## JavaScript, CSS/SCSS and React Projects
 
-##Digital Fusion Art
+## Digital Fusion Art
 
-##Digital Painting
+## Digital Painting
 
-##Photo Effects
+## Photo Effects
 
-##Photo Editing
+## Photo Editing
 
