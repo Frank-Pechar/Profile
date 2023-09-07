@@ -17,7 +17,7 @@ function createNavigation() {
   if (bodyBackground) {
     bodyBackground.innerHTML = `
     <div class="body-background">
-      <div class="starfield">
+      <div class="universe">
         <span></span>
         <span></span>
         <span></span>
