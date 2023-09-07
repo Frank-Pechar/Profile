@@ -226,10 +226,10 @@
 
 @keyframes pulse {
   from {
-    background: -webkit-radial-gradient(center, ellipse cover, var(--color-main-star) 0%, rgba(255, 255, 255, 0) 50%);
+    background: -webkit-radial-gradient(center, ellipse cover, var(--color-sun) 0%, rgba(255, 255, 255, 0) 50%);
     opacity: 1; }
   to {
-    background: -webkit-radial-gradient(center, ellipse cover, var(--color-main-star) 0%, rgba(255, 255, 255, 0) 50%);
+    background: -webkit-radial-gradient(center, ellipse cover, var(--color-sun) 0%, rgba(255, 255, 255, 0) 50%);
     opacity: 0.5; } }
 
 @keyframes animated-gradient {
@@ -306,7 +306,7 @@
   100% {
     opacity: 1; } }
 
-.starfield {
+.universe {
   position: relative;
   user-select: none;
   display: block;
@@ -316,41 +316,41 @@
   animation: appear 2s;
   z-index: -10; }
 
-.starfield > * {
+.universe > * {
   position: absolute;
   top: -450%;
   left: 0;
   height: 1000%;
   width: 100%; }
 
-.starfield > * {
+.universe > * {
   background-size: 200px 200px;
   background-image: radial-gradient(2.6px 2.6px at 40px 60px, #ccc, rgba(0, 0, 0, 0)), radial-gradient(3.7px 3.7px at 20px 20px, var(--star-gray), rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 30px 100px, var(--star-gray), rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 40px 40px, var(--star-gray), rgba(0, 0, 0, 0)), radial-gradient(4.4px 4.4px at 110px 80px, var(--star-gray), rgba(0, 0, 0, 0)), radial-gradient(3.4px 3.4px at 190px 150px, var(--star-gray), rgba(0, 0, 0, 0));
   background-position: center;
   background-repeat: repeat; }
 
-.starfield > * {
+.universe > * {
   transform-origin: 50% 50%;
-  animation-name: starfieldRotate;
+  animation-name: universeRotate;
   animation-iteration-count: infinite;
   animation-timing-function: linear; }
 
-.starfield > *:nth-child(1) {
+.universe > *:nth-child(1) {
   animation-duration: 35s; }
 
-.starfield > *:nth-child(2) {
+.universe > *:nth-child(2) {
   animation-duration: 45s; }
 
-.starfield > *:nth-child(3) {
+.universe > *:nth-child(3) {
   animation-duration: 60s; }
 
-.starfield > *:nth-child(4) {
+.universe > *:nth-child(4) {
   animation-duration: 80s; }
 
-.starfield > *:nth-child(5) {
+.universe > *:nth-child(5) {
   animation-duration: 105s; }
 
-@keyframes starfieldRotate {
+@keyframes universeRotate {
   from {
     transform: rotate(0deg); }
   to {
@@ -368,7 +368,7 @@
   --color-main-background: hsla(252, 100%, 24%, 1);
   --color-main-background-light: hsla(252, 100%, 44%, 1);
   --color-main-background-dark: hsla(252, 100%, 10%, 1);
-  --color-main-star: hsla(48, 100%, 50%, 1);
+  --color-sun: hsla(48, 100%, 50%, 1);
   --star-gray: #bbafc863;
   --color-yellow1: hsl(45, 100%, 63%);
   --color-yellow2: hsl(45, 100%, 48%);
