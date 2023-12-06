@@ -87,7 +87,7 @@ $left-counter: 10vw;
     font-weight: 300;
     font-size: 1.7rem;
     line-height: 1.1;
-    text-shadow: 0rem 0rem 0.5rem var(--text-shadow-violet-dk);
+    text-shadow: 0rem 0rem 0.5rem var(--color-text-shadow-dk);
   }
 }
 
@@ -292,19 +292,19 @@ $left-counter: 10vw;
     ),
     radial-gradient(
       3.7px 3.7px at 20px 20px,
-      var(--star-gray),
+      var(--color-gray),
       rgba(0, 0, 0, 0)
     ),
-    radial-gradient(3px 3px at 30px 100px, var(--star-gray), rgba(0, 0, 0, 0)),
-    radial-gradient(4px 4px at 40px 40px, var(--star-gray), rgba(0, 0, 0, 0)),
+    radial-gradient(3px 3px at 30px 100px, var(--color-gray), rgba(0, 0, 0, 0)),
+    radial-gradient(4px 4px at 40px 40px, var(--color-gray), rgba(0, 0, 0, 0)),
     radial-gradient(
       4.4px 4.4px at 110px 80px,
-      var(--star-gray),
+      var(--color-gray),
       rgba(0, 0, 0, 0)
     ),
     radial-gradient(
       3.4px 3.4px at 190px 150px,
-      var(--star-gray),
+      var(--color-gray),
       rgba(0, 0, 0, 0)
     );
 
