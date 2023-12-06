@@ -176,12 +176,14 @@ function readyArtModal() {
 
     function nextImg() {
       animate(next);
+      nextBtn.focus();
       next++;
       prev = next - 2;
     }
 
     function prevImg() {
       animate(prev);
+      prevBtn.focus();
       prev--;
       next = prev + 2;
     }
