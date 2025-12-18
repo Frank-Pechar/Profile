@@ -5,7 +5,8 @@
   font-style: normal;
   color: var(--color-yellow1);
   font-size: calc(1vw + 2.2rem);
-  margin: 2rem 0 1.5rem 0;
+  // margin: 2rem 0 1.5rem 0;
+  margin-top: 2rem;
   animation: moveInTop 3s ease-in-out;
   animation-fill-mode: backwards;
   position: relative;
@@ -21,19 +22,20 @@
   }
 
   @media only screen and (max-width: 1700px) {
-    margin: 2rem 0 0 -12vw;
+    // margin: 2rem 0 0 -12vw;
     display: flex;
     flex-direction: column;
 
     & :last-child {
       display: block;
-      margin-left: 20vw;
+      // margin-left: 20vw;
     }
   }
   @media only screen and (max-width: 420px) {
-    margin: 2.5rem 0 0 -5vw;
+    margin-top: 2.5rem;
+    // margin: 2.5rem 0 0 -5vw;
     & :last-child {
-      margin-left: 11vw;
+      // margin-left: 11vw;
     }
   }
 }
@@ -94,12 +96,6 @@
   }
 }
 
-.rounded-triangle {
-  &:focus {
-    outline: 0.2rem solid white;
-  }
-}
-
 .rounded-triangle-text {
   font-family: 'montag', sans-serif;
   font-weight: 300;
@@ -107,9 +103,15 @@
   z-index: 1000;
 }
 
-.rounded-triangle--1 a span:first-of-type {
+.rounded-triangle--1 a p {
   font-family: 'roboto', sans-serif;
-  line-height: 1.5;
+  line-height: 0.8;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.rounded-triangle--2 div {
+  margin-top: -3.5rem;
 }
 
 .display-none {

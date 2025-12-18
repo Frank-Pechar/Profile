@@ -6,7 +6,7 @@
   font-size: var(--fs-project-headings);
   letter-spacing: 0.2rem;
   color: var(--color-yellow1);
-  text-shadow: 0 0.2rem 0.3rem var(--color-text-shadow);
+  text-shadow: 0 0.1rem 0.3rem var(--color-text-shadow);
 
   & :last-child {
     font-size: var(--fs-project-heading2);
@@ -30,6 +30,35 @@
   font-weight: 200;
   font-style: italic;
   color: var(--color-yellow1);
-  text-shadow: 0 0.2rem 0.3rem var(--color-text-shadow);
+  text-shadow: 0 0.1rem 0.3rem var(--color-text-shadow);
   font-size: var(--fs-click-image);
+}
+
+.contracting__ {
+  &list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &item {
+    margin-top: 3rem;
+    width: 80%;
+    &-grp {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 3rem 2rem 0;
+    }
+  }
+  &img {
+    width: 100%;
+    &[src*='paint-brush-drops'] {
+      aspect-ratio: 1.5/1;
+    }
+    &--small {
+      width: 48%;
+      aspect-ratio: 1.4/1;
+    }
+  }
 }

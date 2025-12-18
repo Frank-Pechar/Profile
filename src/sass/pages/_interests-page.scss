@@ -68,7 +68,7 @@
       margin: 0 1rem 2.5rem;
       font-size: 1.4rem;
       text-decoration: none;
-      color: var(--color-white-1);
+      color: var(--color-yellow3);
       transition: all 0.2s;
 
       &:hover {
@@ -82,10 +82,12 @@
       display: inline-block;
       font-size: 1.4rem;
       font-weight: 300;
+      color: var(--color-yellow3);
     }
 
     &__movie-title {
       font-size: 1.4rem;
+      color: var(--color-yellow3);
       // font-style: italic;
     }
   }
@@ -108,14 +110,15 @@
       max-width: 10rem;
       flex: 1 1 0;
       font-size: 1.6rem;
-      background-color: hsla(0, 0%, 100%, 0.4);
+      background-color: hsla(0, 0%, 100%, 0.2);
       border-radius: 0.5rem;
       transition: all 0.2s ease-out;
 
-      &:hover {
-        filter: brightness(1.5) saturate(1.5);
+      &:hover,
+      &:focus {
+        filter: brightness(1.1) saturate(1.5);
         box-shadow: 0 0rem 1rem 0.3rem var(--color-yellow1);
-        transform: scale(1.1) translateY(-0.3rem);
+        transform: scale(1.02) translateY(-0.2rem);
       }
     }
 
@@ -159,8 +162,18 @@
 
     &__grp {
       margin-inline: auto;
-      padding: 1.5rem 0 1rem;
+      margin-top: 2rem;
+      padding: 0.25rem;
       width: 50vw;
+      border-radius: 0.5rem;
+      filter: brightness(0.9);
+      transition: all ease-in 0.2s;
+      &:hover,
+      &:focus {
+        filter: brightness(1.1);
+        box-shadow: 0 0rem 1rem 0.3rem var(--color-yellow1);
+        transform: scale(1.02) translateY(-0.2rem);
+      }
     }
 
     &__link {
@@ -168,16 +181,6 @@
       margin-bottom: 1rem;
       width: 50%;
       border-radius: 0.2rem;
-      outline-offset: 0.7rem;
-      filter: brightness(0.9);
-      transition: all ease-in 0.2s;
-
-      &:hover {
-        outline: 1rem solid var(--color-tertiary);
-        filter: brightness(1.1);
-        box-shadow: 0 0rem 1rem 0.3rem var(--color-yellow1);
-        transform: scale(1.02) translateY(-0.2rem);
-      }
     }
 
     &__img {

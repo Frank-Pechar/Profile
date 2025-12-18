@@ -48,17 +48,17 @@ main {
   @include animated-gradient-mixin;
   margin-top: auto;
   padding: 1.5rem;
-  font-family: quiche-sans, sans-serif;
+  font-family: 'quiche-sans', sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 2.1rem;
   text-align: center;
   color: var(--color-yellow1);
-  text-shadow: 0 0.2rem 0.2rem var(--color-text-shadow);
+  text-shadow: 0 0.1rem 0.3rem var(--color-text-shadow);
   transition: all 0.2s;
 
   &:hover {
-    text-shadow: 0 0.4rem 0.4rem var(--color-text-shadow);
+    text-shadow: 0 0.2rem 0.3rem var(--color-text-shadow);
     transform: scale(1.03);
   }
 }

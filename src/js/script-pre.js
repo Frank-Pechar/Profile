@@ -55,34 +55,13 @@ function createNavigation() {
     <nav id='navigation-list' class="navigation__nav">
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a href="../html-pages/javascript-projects.html" class="navigation__link" tabindex="40"
-            >JavaScript Projects</a
-          >
-        </li>
-        <li class="navigation__item">
-          <a href="../html-pages/react-projects.html" class="navigation__link" tabindex="50"
-            >React Projects</a
-          >
-        </li>
-        <li class="navigation__item">
-          <a href="../html-pages/css-projects.html" class="navigation__link" tabindex="60"
-            >CSS Projects</a
-          >
-        </li>
-        <li class="navigation__item">
-          <a href="../html-pages/workshop-projects.html" 
-          class="navigation__link" tabindex="65"
-            >Workshop</a
-          >
-        </li>
-        <li class="navigation__item">
-          <a href="../html-pages/digital-arts.html" class="navigation__link" tabindex="70"
-            >Digital Arts</a
+          <a href="../html-pages/other-interests.html" class="navigation__link" tabindex="40"
+            >What If ?</a
           >
         </li>   
         <li class="navigation__item">
-          <a href="../html-pages/other-interests.html" class="navigation__link" tabindex="80"
-            >Other Interests</a
+          <a href="../html-pages/digital-arts.html" class="navigation__link" tabindex="70"
+            >Digital Arts</a
           >
         </li>   
         <li class="navigation__item">
